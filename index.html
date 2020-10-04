@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f25651ee7a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+      Alice Scott - Welcome
+    </title>
+  </head>
+
+  <body>
+    <main>
+    <header id="home">
+      <div class= "openbutton" onclick="openNav()">&#9776;</div>
+      <nav id="mySidebar" class="sidebar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>
+        Hi! I'm <span>Alice Scott</span>, <br>
+        a trainee web developer
+          <img src="img./personal.gif" alt="Personal photo" width=200>
+      </h1>
+        
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Return to top</button>
+    
+    <nav class="scrollmenu">
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#future">Future</a>
+      <a href="#contact">Contact</a>
+    </nav>
+<section id="about">
+    <div>
+      <h2>Who Am I?</h2>
+      <div id="about-me">
+        <div class="am-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="am-icon"><i class="far fa-newspaper"></i></div>
+        <div class="am-icon"><i class="fas fa-id-card-alt"></i></div>
+        <div>I am a BSc <em>(Hons)</em> Zoology graduate from the University of Manchester. 
+          Having loved maths and logical thinking from an early age, here I developed my research 
+          and analytical skills culminating in a metanalysis of levels of aggression in primates 
+          using R software to perform my analyses.</div>
+        <div>I previously edited and published research papers for the online scientific 
+          journal <em>ScientificReports</em> at SpringerNature Publishing House Ltd. I was responsible 
+          for ensuring that publication targets were met in a fast-paced yet high-quality manner. Here 
+          I realised I have an affinity for technology and picking up new skills and learning how to use
+        new software.</div>
+        <div>I am an ex-Police Officer for the Metropolitan Police Service, working in front-line 
+          policing in Westminster. Here I developed my interpersonal skills and became 
+          well practised in handling high-pressure situations through conducting investigations and 
+          interviews, managing crime scenes policing protests and enforcing lockdown 
+          restrictions to name a few</div>
+      </div>
+    </div>
+ </section>
+
+ <section id="interests">
+    <h2>Things I Love</h2><br>
+    <div id="my-interests">
+      <div class="mi-icon"><i class="fas fa-plane"></i> Travel - I love to visit new places and try new 
+        things. My next adventure goal is to visit South America - Machu Pichu in particular, but my list 
+        of places to go is endless.</div>
+      <div class="mi-icon"><i class="fas fa-paw"></i> DOGS - I have a (borderline unhealthy) obssession
+      with dogs. So much so that I will drop everything I am doing, or forget everything I am saying
+       whenever I see one.</div>
+      <div class="mi-icon"><i class="fas fa-tools"></i> DIY/Craft - I love a good challenge and being 
+        creative. My social media and photo albums pages are always filled with numerous DIY videos and tutorials.</div>
+      <div class="mi-icon"><i class="fas fa-walking"></i> Fitness - I love swimming and walking. My 
+        highest step count so far is 72,000 steps in a day! I also have a 100km walk planned for the future
+        during which I intend to double that! </div>
+      <div class="mi-icon"><i class="fas fa-utensils"></i> Cooking - Whatever space is left in my phone photo
+      album and instagram feed (after the DIY videos and dogs pictures) is filled with food. I should probably say I'm more
+     interested in food than cooking, but when I have the time I do love to cook and try to recreate
+     the food I've been staring at all day (with mixed results).</div>
+      <div class="mi-icon"><i class="far fa-keyboard"></i> Web Development - Something I've really missed 
+      since university is being interlectually challenged. Being relatively new to web design and writing 
+      code, so far it has been a steep learning curve which I know will only get steeper and more challenging.
+      I am excited to keep learning and improving to be able to create content I am proud of.</div>
+    </div>
+</section>
+    <br>
+
+    <section id="future">
+    <div>
+      <h2>Where To Next?</h2>
+      <div id="future-goals">
+        <div class="fg-icon"><i class="far fa-lightbulb"></i></div>
+        <div class="fg-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="fg-icon"><i class="far fa-smile"></i></i></div>
+        <div>I am currently enrolled in a _nology bootcamp course where I will develop my coding 
+          skills and take my first notable steps towards a new and exciting career in tech</div>
+        <div>As the programming industry is ever evolving and advancing, I will continue to grow 
+          and progress also, learning new languages and skills to produce the best results possible.</div>
+        <div>Ultimately I hope to find a job I love, and one that gives me great job satisfaction with 
+          numerous learning opportunities and different avenues to explore </div>
+      </div>
+    </div>
+    </section>
+
+      <br>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          Drop me an email me at alice_cy_scott@hotmail.com, or send me a message below 
+          and I will get back to you!
+        </p>
+          <form>
+          <label for="fname">First Name</label><br>
+          <input type="text" name="fname" placeholder="Your first name.." required><br>
+          <label for="lname">Last Name</label><br>
+          <input type="text" name="lname" placeholder="Your last name.." required><br>
+          <label for="email">Email address</label><br>
+          <input type="email" name="email" placeholder="Your email address.." required><br>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="subject" placeholder="Write your message here.." style="height:200px" required></textarea>          
+          <br>
+          <input type="submit" value="Submit">
+        </form>       
+    </section>
+
+  <footer id="footer">
+    <p class="copyright">Copyright © 2020. All Rights Reserved</p>
+    <div class="social-media">
+      <i class="fab fa-facebook-square"></i>
+      <a href="https://en-gb.facebook.com/"></a>
+      <i class="fab fa-instagram"></i>
+      <a href ="https://www.instagram.com/?hl=en"></a>
+      <i class="fab fa-twitter"></i>
+      <a href="https://twitter.com/?lang=en-gb"></a>
+      <i class="fab fa-linkedin-in"></i>
+      <a href="https://uk.linkedin.com/"></a>
+    </div>
+  </footer>
+</main>
+
+</body>
+</html>
